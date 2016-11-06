@@ -12,6 +12,8 @@ from lxml import etree
 path = os.getcwd()
 file_name = 'gui-config.json'
 
+proxies = {"http": "127.0.0.1:1080", "https": "127.0.0.1:1080"}
+
 def get_config():
     ss_url = 'http://freevpnss.cc/'
 
@@ -42,6 +44,34 @@ def get_config():
             })
     return configs
 
+def get_config():
+    ss_url = 'http://www.seeout.pw/free/'
+    req = requests.get(ss_url, proxies=proxies)
+    html_content = req.content.decode('utf-8')
+    page = etree.HTML(html_content)
+    root_list = page.xpath(u'//tr[position()>1]')
+    configs = []
+
+    for row in root_list:
+        try:
+            ss_box = tuple(row.xpath('.//td[position()>1]')[:4])
+            title = u'日本樱花'
+            server, server_port, password, method = ss_box
+            server = server.text
+            server_port = server_port.xpath('.//code[1]')[0].text
+            password = password.xpath('.//code[1]')[0].text
+            method = method.xpath('.//code[1]')[0].text
+            configs.append({
+                "remarks": title,
+                "server": server,
+                "server_port": server_port,
+                "password": password,
+                "method": method.lower(),
+            })
+        except:
+            continue
+    return configs
+
 def writ_config(configs):
     with open(file_name, 'w') as f:
         f.write('{ "configs": ')
@@ -49,7 +79,7 @@ def writ_config(configs):
         f.write(',')
         f.write('''
             "index" : 1,
-            "random" : false,
+            "random" : true,
             "global" : false,
             "enabled" : true,
             "shareOverLan" : false,
@@ -57,7 +87,7 @@ def writ_config(configs):
             "bypassWhiteList" : false,
             "localPort" : 1080,
             "reconnectTimes" : 0,
-            "randomAlgorithm" : 0,
+            "randomAlgorithm" : 2,
             "TTL" : 0,
             "proxyEnable" : false,
             "pacDirectGoProxy" : false,
@@ -68,7 +98,7 @@ def writ_config(configs):
             "proxyAuthPass" : null,
             "authUser" : null,
             "authPass" : null,
-            "autoBan" : false,
+            "autoBan" : true,
             "sameHostForSameTarget" : false
         ''')
         f.write('}')
@@ -137,3 +167,4 @@ def timer_start():
 
 if __name__ == "__main__":  
     timer_start()
+    # get_config()
