@@ -13,6 +13,12 @@ path = os.getcwd()
 file_name = 'gui-config.json'
 
 proxies = {"http": "127.0.0.1:1080", "https": "127.0.0.1:1080"}
+headers = { "Accept":"text/html,application/xhtml+xml,application/xml;",
+            "Accept-Encoding":"gzip",
+            "Accept-Language":"zh-CN,zh;q=0.8",
+            "Referer":"http://www.baidu.com/",
+            "User-Agent":"Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/42.0.2311.90 Safari/537.36"
+}
 
 def get_config():
     ss_url = 'http://freevpnss.cc/'
@@ -46,7 +52,7 @@ def get_config():
 
 def get_config():
     ss_url = 'http://www.seeout.pw/free/'
-    req = requests.get(ss_url, proxies=proxies)
+    req = requests.get(ss_url, proxies=proxies, headers=headers)
     html_content = req.content.decode('utf-8')
     page = etree.HTML(html_content)
     root_list = page.xpath(u'//tr[position()>1]')
