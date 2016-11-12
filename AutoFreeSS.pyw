@@ -52,7 +52,7 @@ def get_config():
 
 def get_config():
     ss_url = 'http://www.seeout.pw/free/'
-    req = requests.get(ss_url, proxies=proxies, headers=headers)
+    req = requests.get(ss_url, headers=headers)
     html_content = req.content.decode('utf-8')
     page = etree.HTML(html_content)
     root_list = page.xpath(u'//tr[position()>1]')

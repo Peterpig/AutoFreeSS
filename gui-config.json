@@ -1,0 +1,151 @@
+{ "configs": [
+    {
+        "method": "rc4-md5",
+        "password": "seeout.pw-olbdcq",
+        "remarks": "\u65e5\u672c\u6a31\u82b1",
+        "server": "153.125.231.176",
+        "server_port": "31011"
+    },
+    {
+        "method": "rc4-md5",
+        "password": "seeout.pw-olbdcq",
+        "remarks": "\u65e5\u672c\u6a31\u82b1",
+        "server": "153.125.231.177",
+        "server_port": "31913"
+    },
+    {
+        "method": "rc4-md5",
+        "password": "seeout.pw-olbdcq",
+        "remarks": "\u65e5\u672c\u6a31\u82b1",
+        "server": "153.125.231.178",
+        "server_port": "31989"
+    },
+    {
+        "method": "rc4-md5",
+        "password": "seeout.pw-olbdcq",
+        "remarks": "\u65e5\u672c\u6a31\u82b1",
+        "server": "153.125.231.179",
+        "server_port": "31079"
+    },
+    {
+        "method": "rc4-md5",
+        "password": "seeout.pw-olbdcq",
+        "remarks": "\u65e5\u672c\u6a31\u82b1",
+        "server": "153.125.232.143",
+        "server_port": "31309"
+    },
+    {
+        "method": "rc4-md5",
+        "password": "seeout.pw-olbdcq",
+        "remarks": "\u65e5\u672c\u6a31\u82b1",
+        "server": "153.125.232.143",
+        "server_port": "31496"
+    },
+    {
+        "method": "rc4-md5",
+        "password": "seeout.pw-olbdcq",
+        "remarks": "\u65e5\u672c\u6a31\u82b1",
+        "server": "153.125.232.143",
+        "server_port": "31528"
+    },
+    {
+        "method": "rc4-md5",
+        "password": "seeout.pw-olbdcq",
+        "remarks": "\u65e5\u672c\u6a31\u82b1",
+        "server": "153.125.232.143",
+        "server_port": "31556"
+    },
+    {
+        "method": "rc4-md5",
+        "password": "seeout.pw-olbdcq",
+        "remarks": "\u65e5\u672c\u6a31\u82b1",
+        "server": "153.125.232.145",
+        "server_port": "31187"
+    },
+    {
+        "method": "rc4-md5",
+        "password": "seeout.pw-olbdcq",
+        "remarks": "\u65e5\u672c\u6a31\u82b1",
+        "server": "153.125.232.145",
+        "server_port": "31298"
+    },
+    {
+        "method": "rc4-md5",
+        "password": "seeout.pw-olbdcq",
+        "remarks": "\u65e5\u672c\u6a31\u82b1",
+        "server": "153.125.232.145",
+        "server_port": "31859"
+    },
+    {
+        "method": "rc4-md5",
+        "password": "seeout.pw-olbdcq",
+        "remarks": "\u65e5\u672c\u6a31\u82b1",
+        "server": "153.125.232.145",
+        "server_port": "31993"
+    },
+    {
+        "method": "rc4-md5",
+        "password": "seeout.pw-olbdcq",
+        "remarks": "\u65e5\u672c\u6a31\u82b1",
+        "server": "153.125.232.208",
+        "server_port": "31151"
+    },
+    {
+        "method": "rc4-md5",
+        "password": "seeout.pw-olbdcq",
+        "remarks": "\u65e5\u672c\u6a31\u82b1",
+        "server": "153.125.232.208",
+        "server_port": "31308"
+    },
+    {
+        "method": "rc4-md5",
+        "password": "seeout.pw-olbdcq",
+        "remarks": "\u65e5\u672c\u6a31\u82b1",
+        "server": "153.125.232.209",
+        "server_port": "31398"
+    },
+    {
+        "method": "rc4-md5",
+        "password": "seeout.pw-olbdcq",
+        "remarks": "\u65e5\u672c\u6a31\u82b1",
+        "server": "153.125.232.209",
+        "server_port": "31483"
+    },
+    {
+        "method": "rc4-md5",
+        "password": "seeout.pw-olbdcq",
+        "remarks": "\u65e5\u672c\u6a31\u82b1",
+        "server": "153.125.232.212",
+        "server_port": "31485"
+    },
+    {
+        "method": "rc4-md5",
+        "password": "seeout.pw-olbdcq",
+        "remarks": "\u65e5\u672c\u6a31\u82b1",
+        "server": "153.125.232.212",
+        "server_port": "31615"
+    }
+],
+            "index" : 1,
+            "random" : true,
+            "global" : false,
+            "enabled" : true,
+            "shareOverLan" : false,
+            "isDefault" : false,
+            "bypassWhiteList" : false,
+            "localPort" : 1080,
+            "reconnectTimes" : 0,
+            "randomAlgorithm" : 2,
+            "TTL" : 0,
+            "proxyEnable" : false,
+            "pacDirectGoProxy" : false,
+            "proxyType" : 0,
+            "proxyHost" : null,
+            "proxyPort" : 0,
+            "proxyAuthUser" : null,
+            "proxyAuthPass" : null,
+            "authUser" : null,
+            "authPass" : null,
+            "autoBan" : true,
+            "sameHostForSameTarget" : false
+        }
